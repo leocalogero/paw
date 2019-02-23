@@ -1,0 +1,66 @@
+.section {
+    &__who {
+        background: $brand--yellow;
+    }
+    &__inner {
+        // border: 1px solid red;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 50px;
+        &--two {
+            flex-direction: row-reverse;
+            margin-right: 0;
+            margin-left: 50px;
+        }
+    }
+    &--who {
+        background-color: $brand--yellow;
+        padding: 5% 0;
+        .section {
+            &__content {
+                max-width: 775px;;
+            }
+        }
+    }
+    &--volunteer {
+        background-color: $brand--gray;
+        .section {
+            &__item-content {
+                width: 550px;
+            }
+            &__item {
+                margin: 0;
+            }
+        }
+    }
+    &--profile {
+        .section {
+            &__inner {
+                padding: 5% 0;
+            }
+            &__item {
+                padding: 5% 0;
+            }
+            &__item-content {
+                max-width: 375px;
+            }
+            &__item-img {
+                position: relative;
+                z-index: 10;
+                &:before {
+                    content: "";
+                    z-index: -1;
+                    background: $brand--yellow;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    left: -30px;
+                    top: 30px;
+                }
+            }
+        }
+    }
+}

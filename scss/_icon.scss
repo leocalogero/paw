@@ -1,0 +1,63 @@
+@mixin line {
+    width: 28px;
+    height: 2px;
+    background: black;
+}
+
+@mixin line--short {
+    width: 12px;
+    height: 2px;
+    background: blue;
+}
+
+
+.icon {
+    &--hamburger {
+        @include line;
+        position: relative;
+        &:after, &:before {
+            content: "";
+            position: absolute;
+            @include line;
+            top: -7px;
+        }
+        &:before {
+            top: 7px;
+        }
+    }
+    &--close {
+        @include line;
+        background: black;
+        transform: rotate(45deg);
+        position: absolute;
+        &:before {
+            content: "";
+            position: absolute;
+            @include line;
+            transform: rotate(-90deg);
+        }
+    }
+    &--slider {
+        width: 50px;
+        height: 50px;
+        background:$brand--yellow;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 9px 30px 3px rgba(0, 0, 0, .16);
+        margin-right: 17px;
+    }
+    &--chevron {
+        width: 12px;
+        height: 12px;
+        border: 3px solid;
+        border-right: none;
+        border-bottom: none;
+        transform: rotate(-45deg);
+        color: $brand--white;
+        &-right {
+            transform: rotate(135deg);
+        }
+    }
+}

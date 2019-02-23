@@ -1,0 +1,40 @@
+.menu {
+    &--desktop {
+        height: 100px;
+        z-index: 9;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        background: $brand--white;
+    }
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        padding-top: 20px;
+    }
+    &__logo {
+        &-img {
+            width: 36px;
+            height: auto;
+        }
+    }
+    &__nav {
+        &-list {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+        }
+        &-item {
+            padding: 20px;
+        }
+        &-link {
+            text-decoration: none;
+            color: $brand--black;
+            font-size: 1.2em;
+            font-weight: 700;
+        }
+    }
+}

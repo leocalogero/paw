@@ -1,0 +1,34 @@
+.footer {
+    background-color: $brand--darkgray;
+    padding: 5% 0;
+    &__inner {
+    }
+    &__copyright {
+        text-align: center;
+    }
+    &__list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 700px;
+        &-item {
+            width: 100%;
+        }
+        &-link {
+            text-decoration: none;
+            color: $brand--white;
+            font-weight: 900;
+            font-size: 1.2em;
+        }
+    }
+    &__copyright {
+        text-align: center;
+        display: block;
+        color: $brand--white;
+        font-size: 1.3em;
+        margin-top: 60px;
+    }
+}

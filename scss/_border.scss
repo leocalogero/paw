@@ -1,0 +1,39 @@
+@mixin border--ver {
+    width: 17px;
+    height: 100%;
+    background-color: $brand--yellow;
+    position: absolute;
+}
+
+@mixin border--hor {
+    width: 100%;
+    height: 17px;
+    background-color: $brand--yellow;
+    position: absolute;
+}
+
+body {
+    position: relative;
+}
+
+.border {
+    z-index: 99999999999;
+    &--left, &--right {
+        @include border--ver;
+        left: 0;
+        top: 0;
+    }
+    &--right {
+        right: 0;
+        left: auto;
+    }
+    &--top, &--bottom {
+        @include border--hor;
+        top: 0;
+        bottom: auto;
+    }
+    &--bottom {
+        top: auto;
+        bottom: 0;
+    }
+}
