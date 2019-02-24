@@ -6,6 +6,61 @@ $( document ).ready(function() {
     function(){ $(this).removeClass('sub-menu-triggered') }
   );
 
+  const modal = $('.modal');
+  const overlay = $('.overlay');
+
+  modal.hide();
+  overlay.hide();
+
+  $('.open-modal').click(
+    function(){ $(overlay).show() },
+  );
+
+  $('.open-modal').click(
+    function(){ $(modal).show() },
+  );
+
+
+  $('.modal__close').click(
+    function(){ $(overlay).hide() },
+  );
+
+  $('.modal__close').click(
+    function(){ $(modal).hide() },
+  );
+
+
+  setInterval(function(){ 
+      $("#myBtn").click();
+  },3000);
+
+
+  $('#form .form-holder__input').focus(function()
+  {
+      if( !$(this).val().length < 0 ) {
+            $(this).addClass('notempty');
+      }
+  });
+
+  (function($) {
+  
+    var jqBox = $('#box');
+    var jqCheckboxFlash = jqBox.prev('.checkbox-flash');
+    
+    jqCheckboxFlash.bind('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function() {
+      $(this).removeClass('animate');
+    });
+    
+    jqBox.click(function(e) {
+      var parent = jqBox.parent();
+      var x = e.pageX - parent.offset().left - jqCheckboxFlash.width()/2;
+      var y = e.pageY - parent.offset().top - jqCheckboxFlash.height()/2;
+      jqCheckboxFlash.css({top: y + 'px', left: x + 'px'}).addClass('animate');
+    });
+    
+    
+  })(jQuery);
+
 });
 
 
@@ -39,4 +94,3 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
-

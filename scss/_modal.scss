@@ -1,0 +1,114 @@
+.section--volunteer {
+    position: relative;
+}
+
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    background: $brand--black;
+    opacity: 0.7;
+    bottom: 0;
+    z-index: 9999;
+    position: absolute;
+    scroll-behavior: none;
+}
+
+.body-no-scroll {
+    overflow: hidden;
+}
+
+.modal {
+    position: absolute;
+    top: 40%;
+    right: -12.5%;
+    width: 1200px;
+    height: 800px;
+    background: white;
+    transform: translate(-50%, -50%);
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 9px 30px 3px rgba(0, 0, 0, .16);
+    &__inner {
+        width: 1050px;
+        height: 510px;
+        margin: 0 auto;
+    }
+    &__close {
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        left: auto;
+        width: 50px;
+        padding: 20px;
+        cursor: pointer;
+        .icon--close {
+            width: 45px;
+            &:before {
+                width: 45px;
+            }
+            &:active {
+                cursor: pointer;
+            }
+        }
+    }
+    &__button {
+        position: absolute;
+        right: 60px;
+    }
+    &__content {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__title {
+        font-size: 1.8em;
+        font-weight: 900;
+        padding-bottom: 20px;
+    }
+    &__item {
+        &--one {
+            width: 100%;
+        }
+        &--two, &--three, &--four, &--five {
+            input {
+                height: 40px;
+            }
+        }
+        &--two {
+            width: calc(50% - 17.5px);
+        }
+        &--three {
+            width: calc(50% - 17.5px);
+        }
+        &--four {
+            width: calc(50% - 17.5px);
+        }
+        &--five {
+            width: calc(50% - 17.5px);
+        }
+        &--six {
+            width: 100%;
+            padding: 0;
+        }
+        &--seven {
+            margin-top: -70px;
+            width: 20px;
+            position: relative;
+            label {
+                width: 540px;
+                top: 25px;
+                left: 40px;
+                position: absolute;
+                font-size: 1.2em;
+                font-weight: 700;
+            }
+            input {
+                background: $brand--yellow;
+            }
+        }
+    }
+}

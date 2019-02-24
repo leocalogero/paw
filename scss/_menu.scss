@@ -1,27 +1,44 @@
 .sub-menu-triggered {
     .menu__sub-menu {
-        height: 160px;
+        border-top: 5px solid;
+        height: 170px;
+        box-shadow: 0 9px 30px 3px rgba(0, 0, 0, .16);
         overflow: visible;
+        opacity: 1;
     }
 }
 .menu {
     &__sub-menu {
         position: absolute;
         background: $brand--white;
-        box-shadow: 0 9px 30px 3px rgba(0, 0, 0, .16);
         // min-height: 160px;
-        min-width: 120px;
+        min-width: 210px;
         height: 0;
         overflow: hidden;
         transition: 0.2s ease-in-out;
+        margin-top: 35px;
+        margin-left: -45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
         &-list {
             padding: 0;
             margin: 0;
             list-style-type: none;
+            text-align: center;
         }
         &-list-item {
             padding: 0;
-            margin: 0;
+            margin: 20px 0;
+        }
+        &-list-link {
+            font-size: 1.2em;
+            font-weight: 900;
+            color: $brand--black;
+            &:hover {
+                color: $brand--yellow;
+            }
         }
 
     }
@@ -54,17 +71,16 @@
             display: flex;
         }
         &-item {
-            padding: 20px;
+            padding: 30px;
         }
         &-link {
             text-decoration: none;
             color: $brand--black;
-            font-size: 1.2em;
-            font-weight: 700;
-            transition: all 0.2s ease-in-out;
+            font-size: 1em;
+            font-weight: 900;
+            transition: all 0.1s ease-in-out;
             &:hover {
-                text-decoration: underline;
-                text-underline-position: below;
+                color: $brand--yellow;
             }
         }
     }

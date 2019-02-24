@@ -5,19 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="dist/style.css">
-        <!-- <link href="https://fonts.googleapis.com/css?family=Gothic+A1:400,500,700,900" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css?family=Gothic+A1:400,500,700,900" rel="stylesheet">
 
     </head>
     <body>
-
-        <!-- borders -->
-
         <div class="border border--top"></div>
         <div class="border border--left"></div>
         <div class="border border--right"></div>
         <div class="border border--bottom"></div>
-
-        <!-- mobile-menu -->
 
         <nav class="menu__mobile">
             <div class="mobile__menu--open">
@@ -54,10 +49,7 @@
                     </div>
                 </div>
             </div>
-        </nav>
-
-        <!-- desktop-menu -->
-
+        </nav>4wq
         <nav class="menu--desktop _wrapper _wrapper--large">
             <div class="menu__inner wrapper wrapper--large">
                 <div class="menu__logo">
@@ -74,17 +66,17 @@
                                 <ul class="menu__sub-menu-list">
                                     <li class="menu__sub-menu-list-item">
                                         <a href="" class="menu__sub-menu-list-link">
-                                            item 1
+                                            Adopt a Pet
                                         </a>
                                     </li>
                                     <li class="menu__sub-menu-list-item">
                                         <a href="" class="menu__sub-menu-list-link">
-                                            item 2
+                                            Volunteer
                                         </a>
                                     </li>
                                     <li class="menu__sub-menu-list-item">
                                         <a href="" class="menu__sub-menu-list-link">
-                                            item 3
+                                            Foster
                                         </a>
                                     </li>
                                 </ul>
@@ -97,8 +89,6 @@
                 </div>
             </div>
         </nav>
-
-
         <header>
             <div class="header__section">
                 <div class="header__slider">
@@ -139,7 +129,7 @@
                     <div class="header__content--top">
                         <h1>Hey there!</h1>
                         <h2>We need a home.</h2>
-                        <button class="button" onclick="window.location.href = 'https://google.com';">Learn How</button>
+                        <button class="button" onclick="window.location.href = 'https://w3docs.com';">Learn How</button>
                     </div>
                     <div class="header__content--bottom">
                         <div class="header__content--left">
@@ -152,7 +142,7 @@
                             <div class="icon--slider icon--slider-left" onclick="plusSlides(-1)">
                                 <div class="icon--chevron icon--chevron-left"></div>
                             </div>
-                            <div class="icon--slider icon--slider-right" onclick="plusSlides(1)">
+                            <div class="icon--slider icon--slider-right" id="myBtn" onclick="plusSlides(1)">
                                 <div class="icon--chevron icon--chevron-right"></div>
                             </div>
                         </div>
@@ -178,12 +168,13 @@
                     <div class="section__content">
                         <div class="section__item section__item--one">
                             <div class="section__item-img">
-                                <picture>
+                                <!-- <picture>
                                     <source media="(max-width: 599px)" srcset="assets/Mobile/Mobile-header3.jpg">
                                     <source media="(max-width: 900px)" srcset="assets/Tablet/Tablet-header3.jpg">
                                     <source media="(max-width: 1200px)" srcset="assets/Desktop/Desktop-header3.jpg">
                                     <img src="https://placehold.it/575x720" alt="">
-                                </picture>
+                                </picture> -->
+                                <img src="assets/profile-1.png" alt="">
                             </div>
                             <div class="section__item-content">
                                 <h5>2 years old</h5>
@@ -195,12 +186,13 @@
                         </div>
                         <div class="section__item section__item--two">
                             <div class="section__item-img">
-                                <picture>
+                                <!-- <picture>
                                     <source media="(max-width: 599px)" srcset="assets/Mobile/Mobile-header3.jpg">
                                     <source media="(max-width: 900px)" srcset="assets/Tablet/Tablet-header3.jpg">
                                     <source media="(max-width: 1200px)" srcset="assets/Desktop/Desktop-header3.jpg">
                                     <img src="https://placehold.it/575x720" alt="">
-                                </picture>
+                                </picture> -->
+                                <img src="assets/profile-2.png" alt="">
                             </div>
                             <div class="section__item-content">
                                 <h5>3 years old</h5>
@@ -214,13 +206,82 @@
             </div>
         </section>
         <section class="section--volunteer">
+            <div class="overlay"></div>
+            <div class="modal">
+                <div class="modal__close">
+                    <div class="icon icon--close"></div>
+                </div>
+                <div class="modal__inner">
+                    <div class="modal__content">
+                        
+                        <div class="modal__item modal__item--one">
+                            <span class="modal__title">Full Legal Name</span>
+                        </div>
+    
+                        <div class="modal__item modal__item--two material-form-field">
+                            <input type="text" required name="text" id="field-text"/>
+                            <label class="material-form-field-label" for="field-text">First Name</label>
+                        </div>
+    
+                        <div class="modal__item modal__item--three material-form-field">
+                            <input type="text" required name="text" id="field-text"/>
+                            <label class="material-form-field-label" for="field-text">Last Name</label>
+                        </div>
+    
+                        <div class="modal__item modal__item--four">
+                            <span class="modal__title">Email Address </span>
+                            <div class="material-form-field">
+                                    <input type="text" required name="text" id="field-text"/>
+                                    <label class="material-form-field-label" for="field-text">Email Address</label>
+                            </div>
+                        </div>
+                            
+                        <div class="modal__item modal__item--five">
+                            <span class="modal__title">How old are you?</span>
+                            <div class="material-form-field">
+                                <input type="text" required name="dropDown" id="field-dropDown"/>
+                                <label class="material-form-field-label" for="field-dropDown">Select Age</label>
+                                <ul class="material-dropdown">
+                                    <li>13-18</li>
+                                    <li>19-25</li>
+                                    <li>26-35</li>
+                                    <li>36-45</li>
+                                    <li>46-65</li>
+                                    <li>65+</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="modal__item modal__item--six material-form-field">
+                            <span class="modal__title">Tell us about yourself</span>
+                            <div class="material-form-field">
+                                <textarea></textarea>
+                                <label class="material-form-field-label" for="field-text">Why do you want to volunteer?</label>
+                            </div>
+                        </div>
+    
+                        <div class="modal__item modal__item--seven material-form-field">
+                            <div class="modal__casl">
+                                <span class="checkbox-flash"></span>
+                                <input type="checkbox" id="box" checked="checked">	
+                            </div>
+                            <label for="box">Yes, you can send me PAW Nation emails and newsletters.</label>
+                        </div>
+    
+                    </div>
+                    <button type="submit" class="modal__button button">
+                        Apply Now
+                    </button>
+                </div>
+            </div>
+                
             <div class="wrapper">
                 <div class="section__inner">
                     <div class="section__item">
                         <div class="section__item-content">
                             <h3>Volunteer with us</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam assumenda iure eaque nostrum laboriosam vel aliquam natus, impedit voluptatibus distinctio!</p>
-                            <button class="button">Apply Now</button>
+                            <button class="button open-modal">Apply Now</button>
                             <hr>
                             <h4>Shelter Hours</h4>
                             <table>
