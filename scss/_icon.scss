@@ -47,6 +47,12 @@
         justify-content: center;
         box-shadow: 0 9px 30px 3px rgba(0, 0, 0, .16);
         margin-right: 17px;
+        &:hover {
+            transform: scale(1.015);
+        }
+        &:active {
+            transform: scale(1.015) translateY(2px);
+        }
     }
     &--chevron {
         width: 12px;

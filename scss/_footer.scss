@@ -21,7 +21,11 @@
             text-decoration: none;
             color: $brand--white;
             font-weight: 900;
-            font-size: 1.2em;
+            font-size: 1em;
+            &:hover {
+                text-decoration: underline;
+                text-underline-position: below;
+            }
         }
     }
     &__copyright {

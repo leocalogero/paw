@@ -5,14 +5,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="dist/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Gothic+A1:400,500,700,900" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Gothic+A1:400,500,700,900" rel="stylesheet"> -->
 
     </head>
     <body>
+
+        <!-- borders -->
+
         <div class="border border--top"></div>
         <div class="border border--left"></div>
         <div class="border border--right"></div>
         <div class="border border--bottom"></div>
+
+        <!-- mobile-menu -->
+
         <nav class="menu__mobile">
             <div class="mobile__menu--open">
                 <div class="mobile__menu-icon">
@@ -49,6 +55,9 @@
                 </div>
             </div>
         </nav>
+
+        <!-- desktop-menu -->
+
         <nav class="menu--desktop _wrapper _wrapper--large">
             <div class="menu__inner wrapper wrapper--large">
                 <div class="menu__logo">
@@ -59,8 +68,27 @@
                         <li class="menu__nav-item">
                             <a class="menu__nav-link" href="">About Paw</a>
                         </li>
-                        <li class="menu__nav-item">
+                        <li class="menu__nav-item sub-menu-trigger">
                             <a class="menu__nav-link" href="">Learn How</a>
+                            <div class="menu__sub-menu">
+                                <ul class="menu__sub-menu-list">
+                                    <li class="menu__sub-menu-list-item">
+                                        <a href="" class="menu__sub-menu-list-link">
+                                            item 1
+                                        </a>
+                                    </li>
+                                    <li class="menu__sub-menu-list-item">
+                                        <a href="" class="menu__sub-menu-list-link">
+                                            item 2
+                                        </a>
+                                    </li>
+                                    <li class="menu__sub-menu-list-item">
+                                        <a href="" class="menu__sub-menu-list-link">
+                                            item 3
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="menu__nav-item">
                             <a class="menu__nav-link" href="">Contact</a>
@@ -69,6 +97,8 @@
                 </div>
             </div>
         </nav>
+
+
         <header>
             <div class="header__section">
                 <div class="header__slider">
@@ -109,7 +139,7 @@
                     <div class="header__content--top">
                         <h1>Hey there!</h1>
                         <h2>We need a home.</h2>
-                        <button class="button" onclick="window.location.href = 'https://w3docs.com';">Learn How</button>
+                        <button class="button" onclick="window.location.href = 'https://google.com';">Learn How</button>
                     </div>
                     <div class="header__content--bottom">
                         <div class="header__content--left">

@@ -1,6 +1,13 @@
-console.log(
-    'test'
-);
+$( document ).ready(function() {
+  console.log( "ready!" );
+  
+  $('.sub-menu-trigger').hover(
+    function(){ $(this).addClass('sub-menu-triggered') },
+    function(){ $(this).removeClass('sub-menu-triggered') }
+  );
+
+});
+
 
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -32,3 +39,4 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
+

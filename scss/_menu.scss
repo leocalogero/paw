@@ -1,4 +1,30 @@
+.sub-menu-triggered {
+    .menu__sub-menu {
+        height: 160px;
+        overflow: visible;
+    }
+}
 .menu {
+    &__sub-menu {
+        position: absolute;
+        background: $brand--white;
+        box-shadow: 0 9px 30px 3px rgba(0, 0, 0, .16);
+        // min-height: 160px;
+        min-width: 120px;
+        height: 0;
+        overflow: hidden;
+        transition: 0.2s ease-in-out;
+        &-list {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+        &-list-item {
+            padding: 0;
+            margin: 0;
+        }
+
+    }
     &--desktop {
         height: 100px;
         z-index: 9;
@@ -35,6 +61,11 @@
             color: $brand--black;
             font-size: 1.2em;
             font-weight: 700;
+            transition: all 0.2s ease-in-out;
+            &:hover {
+                text-decoration: underline;
+                text-underline-position: below;
+            }
         }
     }
 }
