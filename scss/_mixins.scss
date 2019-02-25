@@ -22,8 +22,20 @@
     }
 }
 
-@mixin desktop {
+@mixin desktop--small {
     @media (min-width: #{$small-desktop-width}) and (max-width: #{$desktop-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin desktop--medium {
+    @media (min-width: #{$medium-desktop-width}) and (max-width: #{$small-desktop-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin desktop--large {
+    @media (min-width: #{$desktop-width}) and (max-width: #{$large-desktop-width - 1px}) {
         @content;
     }
 }

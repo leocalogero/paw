@@ -68,6 +68,23 @@
         width: 100%;
         flex-wrap: wrap;
         justify-content: space-between;
+        &--alternate {
+            display: none;
+            margin: auto auto;
+            text-align: center;
+            img {
+                margin-bottom: 40px;
+            }
+            h3 {
+                margin-top: 20px;
+            }
+            h4 {
+                margin-top: 40px;
+            }
+            &-visible {
+                display: block;
+            }
+        }
     }
     &__title {
         font-size: 1.8em;
