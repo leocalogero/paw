@@ -49,6 +49,9 @@
         width: 100%;
         top: 0;
         background: $brand--white;
+        @include tablet {
+            display: none;
+        }
     }
     &__inner {
         display: flex;
