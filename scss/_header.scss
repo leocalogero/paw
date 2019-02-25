@@ -34,6 +34,30 @@
            color: $brand--black;
            font-weight: 900; 
         }
+        @include desktop--small {
+            &--bottom {
+                display: none;
+            }
+        }
+        @include tablet {
+            &--bottom {
+                display: none;
+            }
+        }
+    }
+    @include phablet {
+        &__content {
+            min-height: 100%;
+            width: 260px;
+            border: 1px solid red;
+        }
+    }
+    @include tablet {
+        &__content {
+            min-height: 100%;
+            width: 677px;
+            border: 1px solid red;
+        }
     }
 }
 
@@ -45,4 +69,20 @@ main {
     position: absolute;
     right: 0;
     top: 5%;
+    @include tablet {
+        right: 50%;
+        transform: translateX(50%);
+    }
+    @include phablet {
+        right: 50%;
+        transform: translateX(50%);
+    }
+    @include mobile {
+        right: 50%;
+        transform: translateX(50%);
+    }
+    @include mobile--small {
+        right: 50%;
+        transform: translateX(50%);
+    }
 }

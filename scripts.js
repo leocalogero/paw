@@ -67,7 +67,7 @@ $( document ).ready(function() {
       jqCheckboxFlash.css({top: y + 'px', left: x + 'px'}).addClass('animate');
     });
     
-    
+
   })(jQuery);
 
 });

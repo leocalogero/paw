@@ -16,6 +16,13 @@
             margin-left: 50px;
         }
     }
+    @include tablet {
+        &__item {
+            &--two {
+                flex-direction: row;
+            }
+        }
+    }
     &--who {
         background-color: $brand--yellow;
         padding: 5% 0;
