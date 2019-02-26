@@ -5,6 +5,11 @@ $( document ).ready(function() {
     function(){ $(this).removeClass('sub-menu-triggered') }
   );
 
+  $('.sub-menu-trigger').click(
+    function(){ $(this).addClass('sub-menu-triggered') },
+    function(){ $(this).removeClass('sub-menu-triggered') }
+  );
+
   const modal = $('.modal');
   const overlay = $('.overlay');
   const mobileMenu = $('.mobile__menu--open');

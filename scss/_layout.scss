@@ -92,6 +92,27 @@
                     left: -30px;
                     top: 30px;
                 }
+                @include phablet {
+                    margin-bottom: 30px;
+                    &:before {
+                        top: 20px;
+                        left: -20px;
+                    }
+                }
+                @include mobile {
+                    margin-bottom: 30px;
+                    &:before {
+                        top: 10px;
+                        left: -10px;
+                    }
+                }
+                @include mobile--small {
+                    margin-bottom: 30px;
+                    &:before {
+                        top: 10px;
+                        left: -10px;
+                    }
+                }
             }
             @include tablet {
                 &__item {

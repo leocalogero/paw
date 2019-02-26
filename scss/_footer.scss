@@ -6,6 +6,12 @@
     &__copyright {
         text-align: center;
         margin-bottom: 30px;
+        @include mobile {
+            font-size: 1.2em !important;
+        }
+        @include mobile--small {
+            font-size: 1em !important;
+        }
     }
     &__list {
         list-style-type: none;
@@ -59,6 +65,9 @@
             &-item {
                 padding: 20px;
             }
+            &-link {
+                font-size: 1em !important;
+            }
         }
         &__inner {
             display: flex;
@@ -71,6 +80,9 @@
             display: block;
             &-item {
                 padding: 20px;
+            }
+            &-link {
+                font-size: 1em !important;
             }
         }
         &__inner {
