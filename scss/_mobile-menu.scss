@@ -32,6 +32,26 @@
                 top: -15vh;
                 left: -35vw;
             }
+            &__menu-list {
+                margin: 0;
+                padding: 0;
+                transform: translateX(-15px);
+            }
+            &__menu-item {
+                font-family: 'Roboto';
+                margin: 0;
+                a {
+                    color: black;
+                    font-weight: 700;
+                    &:hover {
+                        color: $brand--yellow;
+                    }
+                }
+                &--bold {
+                    font-size: 1.5em;
+                    font-weight: 900;
+                }
+            }
             @include mobile {
                 &__menu-icon {
                     position: relative;

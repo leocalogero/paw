@@ -50,10 +50,16 @@
                 @include mobile {
                     margin: 0;
                     flex-direction: column;
+                    &-content-hours {
+                        display: none;
+                    }
                 }
                 @include mobile--small {
                     margin: 0;
                     flex-direction: column;
+                    &-content-hours {
+                        display: none;
+                    }
                 }
                 &-content {
                     width: calc(100% - 60px);
