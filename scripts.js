@@ -8,6 +8,7 @@ $( document ).ready(function() {
 
   const modal = $('.modal');
   const overlay = $('.overlay');
+  const mobileMenu = $('.mobile__menu--open');
 
   modal.hide();
   overlay.hide();
@@ -30,6 +31,17 @@ $( document ).ready(function() {
     function(){ $(modal).hide() },
   );
 
+  $('.icon--hamburger-button').click(
+    function(){ $(this).addClass('icon--hamburger-button-active') },
+  );
+
+  $('.icon--hamburger-button').click(
+    function(){ $('.mobile__menu--open').addClass('mobile__menu--open-active') },
+  );
+
+  $('.icon--close-button').click(
+    function(){ $('.mobile__menu--open').removeClass('mobile__menu--open-active') },
+  );
 
   setInterval(function(){ 
       $("#myBtn").click();

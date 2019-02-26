@@ -16,31 +16,33 @@
         <div class="border border--bottom"></div>
 
         <nav class="menu__mobile">
-            <div class="mobile__menu--open">
-                <div class="mobile__menu-icon">
-                    <div class="icon--close"></div>
-                </div>
-                <div class="mobile__menu-nav">
-                    <ul class="mobile__menu-list">
-                        <li class="mobile__menu-item">
-                            <a href="">About Paw</a>
-                        </li>
-                        <li class="mobile__menu-item">
-                            <a href="">Adopt a Pet</a>
-                        </li>
-                        <li class="mobile__menu-item">
-                            <a href="">Volunteer</a>
-                        </li>
-                        <li class="mobile__menu-item">
-                            <a href="">Foster</a>
-                        </li>
-                        <li class="mobile__menu-item">
-                            <a href="">Contact Us</a>
-                        </li>
-                    </ul>
+            <div class="mobile__menu--open icon--close-button">
+                <div class="mobile__menu-inner">
+                    <div class="mobile__menu-icon">
+                        <div class="icon--close"></div>
+                    </div>
+                    <div class="mobile__menu-nav">
+                        <ul class="mobile__menu-list">
+                            <li class="mobile__menu-item">
+                                <a href="">About Paw</a>
+                            </li>
+                            <li class="mobile__menu-item">
+                                <a href="">Adopt a Pet</a>
+                            </li>
+                            <li class="mobile__menu-item">
+                                <a href="">Volunteer</a>
+                            </li>
+                            <li class="mobile__menu-item">
+                                <a href="">Foster</a>
+                            </li>
+                            <li class="mobile__menu-item">
+                                <a href="">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="mobile__menu--close">
+            <div class="mobile__menu--close icon--hamburger-button">
                 <div class="mobile__menu-icon">
                     <div class="icon--hamburger"></div>
                 </div>
@@ -180,7 +182,7 @@
                             <div class="section__item-content">
                                 <h5>2 years old</h5>
                                 <h3>Sally, CoonHound</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias itaque perspiciatis dicta ipsam sequi consequatur iusto ut, aspernatur vero nobis nihil dignissimos quo vel hic accusamus. Explicabo hic cumque incidunt excepturi repellendus officiis similique reprehenderit tempore cum dolorum optio odit, rem accusamus, eligendi accusantium! Iusto laboriosam</p>
+                                <p>Aspernatur vero nobis nihil dignissimos quo vel hic accusamus. Explicabo hic cumque incidunt excepturi repellendus officiis similique reprehenderit tempore cum dolorum optio odit, rem accusamus, eligendi accusantium! Iusto laboriosam</p>
                                 <br>
                                 <button class="button">Read More</button>
                             </div>
@@ -198,7 +200,7 @@
                             <div class="section__item-content">
                                 <h5>3 years old</h5>
                                 <h3>Leon, Boxer</h3>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, vitae architecto. Reiciendis vero in soluta laborum? Veritatis, deleniti temporibus sapiente obcaecati nisi, beatae iure veniam atque perspiciatis hic. Amet neque excepturi consequuntur itaque dicta unde iure placeat enim dolor a, possimus dolorum sint voluptate. Aspernatur, doloribus!</p>
+                                <p>Deleniti temporibus sapiente obcaecati nisi, beatae iure veniam atque perspiciatis hic. Amet neque excepturi consequuntur itaque dicta unde iure placeat enim dolor a, possimus dolorum sint voluptate. Aspernatur, doloribus!</p>
                                 <button class="button">Read More</button>
                             </div>
                         </div>
@@ -313,8 +315,8 @@
                         </div>
                         <div class="section__item-img">
                                 <picture>
-                                    <source media="(max-width: 599px)" srcset="assets/Mobile/Mobile-volunteer.jpg">
-                                    <source media="(max-width: 1200px)" srcset="assets/Desktop/Desktop-volunteer.jpg">
+                                    <source media="(max-width: 480px)" srcset="assets/Mobile/Mobile-volunteer.jpg">
+                                    <source media="(max-width: 1020px)" srcset="assets/Tablet/Tablet-volunteer.jpg">
                                     <img src="assets/Desktop/Desktop-volunteer.jpg" alt="">
                                 </picture>
                         </div>
@@ -325,7 +327,7 @@
         <footer class="footer">
             <div id="myDiv" class="wrapper wrapper--content">
                 <div class="footer__inner">
-                    <ul class="footer__list">
+                    <ul class="footer__list footer__list--one">
                         <li class="footer__list-item">
                             <a class="footer__list-link" href="">About</a>
                         </li>
@@ -339,7 +341,7 @@
                             <a class="footer__list-link" href="">Footer 7</a>
                         </li>
                     </ul>
-                    <ul class="footer__list">
+                    <ul class="footer__list footer__list--two">
                         <li class="footer__list-item">
                             <a class="footer__list-link" href="">Contact Us</a>
                         </li>
@@ -353,8 +355,9 @@
                             <a class="footer__list-link" href="">Footer 8</a>
                         </li>
                     </ul>
-                    <span class="footer__copyright">Copyright 2018 - The PAW nation</span>
                 </div>
+                
+                <span class="footer__copyright">Copyright 2018 - The PAW nation</span>
             </div>
         </footer>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>

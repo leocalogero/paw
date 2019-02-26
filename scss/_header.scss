@@ -44,19 +44,57 @@
                 display: none;
             }
         }
+        @include phablet {
+            &--bottom {
+                display: none;
+            }
+        }
+        @include mobile {
+            &--bottom {
+                display: none;
+            }
+        }
+        @include mobile--small {
+            &--bottom {
+                display: none;
+            }
+        }
+         
+    }
+    @include mobile--small {
+        &__content {
+            min-height: 100%;
+            width: 320px;
+            &--top {
+                background: rgba(255,255,255,0.7);
+            }
+        }
+    }
+    @include mobile {
+        &__content {
+            min-height: 100%;
+            width: 360px;
+            &--top {
+                background: rgba(255,255,255,0.7);
+            }
+        }
     }
     @include phablet {
         &__content {
             min-height: 100%;
-            width: 260px;
-            border: 1px solid red;
+            width: 520px;
+            &--top {
+                background: rgba(255,255,255,0.7);
+            }
         }
     }
     @include tablet {
         &__content {
             min-height: 100%;
             width: 677px;
-            border: 1px solid red;
+            &--top {
+                background: rgba(255,255,255,0.7);
+            }
         }
     }
 }

@@ -52,6 +52,15 @@
         @include tablet {
             display: none;
         }
+        @include phablet {
+            display: none;
+        }
+        @include mobile {
+            display: none;
+        }
+        @include mobile--small {
+            display: none;
+        }
     }
     &__inner {
         display: flex;

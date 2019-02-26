@@ -2,6 +2,7 @@
 .wrapper {
     max-width: $desktop-width;
     margin: 0 auto;
+    overflow: hidden;
     &--content {
       max-width: 1180px;
     }
@@ -9,27 +10,48 @@
       max-width: calc(100% - 250px);
     }
     @include desktop--large {
-      border: 1px solid purple;
       max-width: 1180px;
       &--volunteer {
         max-width: 1280px;
       }
     }
     @include desktop--medium {
-      border: 1px solid purple;
       max-width: 1080px;
       &--volunteer {
         max-width: 1280px;
       }
     }
     @include desktop--small {
-      border: 1px solid orange;
       max-width: 1024px;
       &--large {
         min-width: calc(100% - 100px);
       }
       &--volunteer {
         max-width: 1024px;
+      }
+    }
+    @include tablet {
+      max-width: 650px;
+      &--volunteer {
+        max-width: 650px;
+      }
+    }
+    @include phablet {
+      max-width: 550px;
+      &--volunteer {
+        max-width: 650px;
+      }
+    }
+    @include mobile {
+      max-width: 360px;
+      &--volunteer {
+        max-width: 650px;
+      }
+    }
+    @include mobile--small {
+      max-width: 320px;
+      &--volunteer {
+        max-width: 650px;
       }
     }
 }
