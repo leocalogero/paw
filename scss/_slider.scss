@@ -21,6 +21,10 @@
   .fade {
     animation-name: fade;
     animation-duration: 1.3s;
+    &--in {
+      animation-name: fade;
+      animation-duration: 0.7s;
+    }
   }
   
   @-webkit-keyframes fade {
@@ -31,3 +35,18 @@
       opacity: 1;
     }
   }
+
+
+  // .fade-out {
+  //   animation-name: fade;
+  //   animation-duration: 1.3s;
+  // }
+  
+  // @-webkit-keyframes fade {
+  //   from {
+  //     opacity: 1;
+  //   }
+  //   to {
+  //     opacity: 0;
+  //   }
+  // }

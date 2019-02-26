@@ -1,5 +1,4 @@
 $( document ).ready(function() {
-  console.log( "ready!" );
   
   $('.sub-menu-trigger').hover(
     function(){ $(this).addClass('sub-menu-triggered') },
@@ -84,6 +83,7 @@ $( document ).ready(function() {
 
 });
 
+//slider
 
 var slideIndex = 1;
 showSlides(slideIndex);

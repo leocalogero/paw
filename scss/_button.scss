@@ -21,4 +21,20 @@
         outline: none;
         box-shadow: 0 9px 30px 3px rgba(0, 0, 0, .16);
     }
+    @include tablet {
+        padding: 12px 50px;
+        font-size: 12px;
+    }
+    @include phablet {
+        padding: 10px 40px;
+        font-size: 10px;
+    }
+    @include mobile {
+        padding: 10px 40px;
+        font-size: 10px;
+    }
+    @include mobile--small {
+        padding: 8px 35px;
+        font-size: 10px;
+    }
 }
