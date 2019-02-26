@@ -52,7 +52,7 @@ $( document ).ready(function() {
     $('.modal__content').hide();
     setInterval(function(){ 
       $('.modal__content--alternate').addClass('modal__content--alternate-visible');
-  },1000);
+  },500);
   });
 
 
